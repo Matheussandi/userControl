@@ -10,7 +10,7 @@
 
       <div class="col-md-5 d-flex align-items-center py-3 px-4 p-md-0" >
         <div>
-        <h1 class="mb-5">Faça login no <span style="color:#EA80FC">painel<span></h1>
+        <h1 class="mb-5">Faça login no <strong style="color:#EA80FC">painel</strong></h1>
 
         <form method="POST" action="{{ route('login') }}">
           @csrf
@@ -49,7 +49,7 @@
               <x-primary-button class="btn btn-primary">
                   {{ __('Entrar') }}
               </x-primary-button>
-              <a href="{{ route('register') }}" class="btn btn-primary container-lg: btn-alert">Registrar</a>
+              <a href="{{ route('register') }}" class="btn btn-primary container-lg: btn-alert p-2">Registrar</a>
           </div>
         </div>
       </form>
