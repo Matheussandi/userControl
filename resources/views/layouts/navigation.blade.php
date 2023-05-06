@@ -13,8 +13,12 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Início') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('users')" :active="request()->routeIs('users')">
+                        {{ __('Usuários') }}
+                </x-nav-link>
 
                     <x-nav-link :href="route('customers.create')" :active="request()->routeIs('customers.create')">
                             {{ __('Novo Cliente') }}
@@ -45,7 +49,7 @@
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('Perfil') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
@@ -55,7 +59,7 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('Sair') }}
                             </x-dropdown-link>
                         </form>
                     </x-slot>
